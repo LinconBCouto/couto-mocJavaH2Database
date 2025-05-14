@@ -48,7 +48,7 @@ public class AlunoController {
 
     }
 
-    @GetMapping("{/id}")
+    @GetMapping("/{id}")
     public Aluno buscaAlunoPorId(@PathVariable Long id) {
         return service.buscarAlunoId(id);
 
